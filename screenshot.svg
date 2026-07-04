@@ -1,0 +1,62 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style="background:radial-gradient(circle at 20% 30%,#030712,#000)">
+  <rect x="0" y="0" width="800" height="500" fill="none"/>
+  <rect x="25" y="20" width="750" height="55" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.4)" stroke-width="1"/>
+  <text x="45" y="55" fill="#eef2ff" font-family="monospace" font-size="14" font-weight="bold">AYMAN ELMASRY</text>
+  <text x="175" y="55" fill="#8db7ff" font-family="monospace" font-size="11">AEL Digital Studio</text>
+
+  <text x="400" y="105" fill="#fff" font-family="monospace" font-size="26" font-weight="bold" text-anchor="middle">AEL Analytics Dashboard</text>
+  <text x="400" y="128" fill="#9ab3e6" font-family="monospace" font-size="12" text-anchor="middle">Pure SVG charting — 5 chart types, KPI metrics, data import/export, zero dependencies</text>
+
+  <rect x="40" y="145" width="170" height="72" rx="10" fill="rgba(0,116,255,.1)" stroke="rgba(0,116,255,.2)" stroke-width="1"/>
+  <text x="55" y="168" fill="#64748b" font-family="monospace" font-size="9">REVENUE</text>
+  <text x="55" y="192" fill="#eef2ff" font-family="monospace" font-size="20" font-weight="bold">$128.4K</text>
+  <text x="55" y="207" fill="#10b981" font-family="monospace" font-size="9">↑ 12.5%</text>
+
+  <rect x="225" y="145" width="170" height="72" rx="10" fill="rgba(16,185,129,.1)" stroke="rgba(16,185,129,.2)" stroke-width="1"/>
+  <text x="240" y="168" fill="#64748b" font-family="monospace" font-size="9">USERS</text>
+  <text x="240" y="192" fill="#eef2ff" font-family="monospace" font-size="20" font-weight="bold">2,847</text>
+  <text x="240" y="207" fill="#10b981" font-family="monospace" font-size="9">↑ 8.2%</text>
+
+  <rect x="410" y="145" width="170" height="72" rx="10" fill="rgba(255,215,0,.1)" stroke="rgba(255,215,0,.2)" stroke-width="1"/>
+  <text x="425" y="168" fill="#64748b" font-family="monospace" font-size="9">ORDERS</text>
+  <text x="425" y="192" fill="#eef2ff" font-family="monospace" font-size="20" font-weight="bold">543</text>
+  <text x="425" y="207" fill="#10b981" font-family="monospace" font-size="9">↑ 3.7%</text>
+
+  <rect x="595" y="145" width="165" height="72" rx="10" fill="rgba(239,68,68,.1)" stroke="rgba(239,68,68,.2)" stroke-width="1"/>
+  <text x="610" y="168" fill="#64748b" font-family="monospace" font-size="9">BOUNCE</text>
+  <text x="610" y="192" fill="#eef2ff" font-family="monospace" font-size="20" font-weight="bold">18.2%</text>
+  <text x="610" y="207" fill="#ef4444" font-family="monospace" font-size="9">↑ 2.1%</text>
+
+  <rect x="40" y="230" width="370" height="140" rx="14" fill="rgba(5,12,24,.5)" stroke="rgba(0,116,255,.15)" stroke-width="1"/>
+  <text x="60" y="255" fill="#eef2ff" font-family="monospace" font-size="12" font-weight="bold">Revenue Over Time</text>
+  <rect x="220" y="247" width="60" height="18" rx="6" fill="rgba(0,116,255,.1)"/>
+  <text x="240" y="260" fill="#4d9bff" font-family="monospace" font-size="8" text-anchor="middle">Line</text>
+  <polyline points="70,340 100,320 130,325 160,295 190,300 220,270 250,275 280,250 310,255 340,235 370,240 400,225" fill="none" stroke="#0074FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+  <polygon points="70,340 70,340 100,320 130,325 160,295 190,300 220,270 250,275 280,250 310,255 340,235 370,240 400,225 400,340" fill="url(#a1)" opacity=".12"/>
+  <defs><linearGradient id="a1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0074FF" stop-opacity=".3"/><stop offset="1" stop-color="#0074FF" stop-opacity="0"/></linearGradient></defs>
+  <line x1="70" y1="340" x2="400" y2="340" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+  <line x1="70" y1="312" x2="400" y2="312" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+  <line x1="70" y1="283" x2="400" y2="283" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+  <line x1="70" y1="255" x2="400" y2="255" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+
+  <rect x="425" y="230" width="335" height="140" rx="14" fill="rgba(5,12,24,.5)" stroke="rgba(0,116,255,.15)" stroke-width="1"/>
+  <text x="445" y="255" fill="#eef2ff" font-family="monospace" font-size="12" font-weight="bold">Users by Source</text>
+  <rect x="575" y="247" width="50" height="18" rx="6" fill="rgba(0,116,255,.1)"/>
+  <text x="590" y="260" fill="#4d9bff" font-family="monospace" font-size="8" text-anchor="middle">Pie</text>
+  <circle cx="530" cy="310" r="50" fill="none" stroke="#0074FF" stroke-width="20" stroke-dasharray="110 251"/>
+  <circle cx="530" cy="310" r="50" fill="none" stroke="#10b981" stroke-width="20" stroke-dasharray="78 283" stroke-dashoffset="-110"/>
+  <circle cx="530" cy="310" r="50" fill="none" stroke="#ffd700" stroke-width="20" stroke-dasharray="56 305" stroke-dashoffset="-188"/>
+  <circle cx="530" cy="310" r="50" fill="none" stroke="#ef4444" stroke-width="20" stroke-dasharray="38 323" stroke-dashoffset="-244"/>
+  <rect x="630" y="300" width="8" height="8" rx="2" fill="#0074FF"/><text x="644" y="308" fill="#64748b" font-family="monospace" font-size="9">Organic</text>
+  <rect x="630" y="318" width="8" height="8" rx="2" fill="#10b981"/><text x="644" y="326" fill="#64748b" font-family="monospace" font-size="9">Direct</text>
+  <rect x="630" y="336" width="8" height="8" rx="2" fill="#ffd700"/><text x="644" y="344" fill="#64748b" font-family="monospace" font-size="9">Social</text>
+
+  <rect x="40" y="385" width="720" height="40" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.25)" stroke-width="1"/>
+  <text x="60" y="409" fill="#64748b" font-family="monospace" font-size="10">Data Table: 12 periods</text>
+  <text x="280" y="409" fill="#64748b" font-family="monospace" font-size="10">CSV Import/Export</text>
+  <text x="480" y="409" fill="#64748b" font-family="monospace" font-size="10">5 Chart Types</text>
+  <text x="650" y="409" fill="#64748b" font-family="monospace" font-size="10">Settings</text>
+
+  <rect x="40" y="440" width="720" height="40" rx="12" fill="rgba(5,12,24,.7)" stroke="rgba(0,116,255,.4)" stroke-width="1"/>
+  <text x="400" y="465" fill="#64748b" font-family="monospace" font-size="11" text-anchor="middle">© 2026 Ayman Elmasry — AEL Digital Studio | Analytics Dashboard v1.0 — Zero dependencies</text>
+</svg>

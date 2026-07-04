@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AEL Analytics Dashboard — Ayman Elmasry</title>
+  <link rel="icon" type="image/svg+xml" href="ael-logo.svg">
+  <link rel="stylesheet" href="ael_dashboard.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="noise"></div>
+
+  <nav class="navbar glass" id="navbar">
+    <div class="nav-brand">
+      <img src="ael-logo.svg" alt="AEL" class="nav-logo-img">
+      <div class="nav-title"><span class="nav-name">AYMAN ELMASRY</span><span class="nav-studio">AEL Digital Studio</span></div>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#overview" class="nav-link active">Overview</a>
+      <a href="#dashboard" class="nav-link">Dashboard</a>
+      <a href="#charts" class="nav-link">Charts</a>
+      <a href="#data" class="nav-link">Data</a>
+      <a href="#settings" class="nav-link">Settings</a>
+      <a href="#about" class="nav-link">About</a>
+    </div>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- Overview -->
+  <section id="overview" class="section active">
+    <div class="section-bg"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+    <div class="container hero">
+      <div class="hero-badge glass"><span class="badge-dot"></span> v1.0 — AEL Studio</div>
+      <h1 class="hero-title"><span class="text-gradient">AEL Analytics</span><span class="hero-sub">Dashboard</span></h1>
+      <p class="hero-desc">A pure SVG charting dashboard — zero dependencies. Generate line, bar, pie, area, and donut charts with interactive tooltips and real-time data simulation.</p>
+      <div class="hero-stats">
+        <div class="stat-card glass"><span class="stat-icon">📊</span><span class="stat-value">5</span><span class="stat-label">Chart Types</span></div>
+        <div class="stat-card glass"><span class="stat-icon">📈</span><span class="stat-value">100+</span><span class="stat-label">Data Points</span></div>
+        <div class="stat-card glass"><span class="stat-icon">⚡</span><span class="stat-value">0</span><span class="stat-label">Dependencies</span></div>
+        <div class="stat-card glass"><span class="stat-icon">🎯</span><span class="stat-value">SVG</span><span class="stat-label">Engine</span></div>
+      </div>
+      <div class="showcase-preview glass">
+        <svg viewBox="0 0 560 200" width="100%" style="max-width:560px">
+          <rect x="20" y="10" width="160" height="80" rx="8" fill="rgba(0,116,255,.1)" stroke="rgba(0,116,255,.2)" stroke-width="1"/>
+          <text x="35" y="40" fill="#64748b" font-family="monospace" font-size="9">Revenue</text>
+          <text x="35" y="62" fill="#eef2ff" font-family="monospace" font-size="18" font-weight="bold">$128.4K</text>
+          <text x="35" y="78" fill="#10b981" font-family="monospace" font-size="9">↑ 12.5%</text>
+          <rect x="195" y="10" width="160" height="80" rx="8" fill="rgba(16,185,129,.1)" stroke="rgba(16,185,129,.2)" stroke-width="1"/>
+          <text x="210" y="40" fill="#64748b" font-family="monospace" font-size="9">Users</text>
+          <text x="210" y="62" fill="#eef2ff" font-family="monospace" font-size="18" font-weight="bold">2,847</text>
+          <text x="210" y="78" fill="#10b981" font-family="monospace" font-size="9">↑ 8.2%</text>
+          <rect x="370" y="10" width="80" height="80" rx="8" fill="rgba(255,215,0,.1)" stroke="rgba(255,215,0,.2)" stroke-width="1"/>
+          <text x="385" y="40" fill="#64748b" font-family="monospace" font-size="9">Orders</text>
+          <text x="385" y="62" fill="#eef2ff" font-family="monospace" font-size="18" font-weight="bold">543</text>
+          <text x="385" y="78" fill="#10b981" font-family="monospace" font-size="9">↑ 3.7%</text>
+          <rect x="465" y="10" width="80" height="80" rx="8" fill="rgba(239,68,68,.1)" stroke="rgba(239,68,68,.2)" stroke-width="1"/>
+          <text x="480" y="40" fill="#64748b" font-family="monospace" font-size="9">Bounce</text>
+          <text x="480" y="62" fill="#eef2ff" font-family="monospace" font-size="18" font-weight="bold">18.2%</text>
+          <text x="480" y="78" fill="#ef4444" font-family="monospace" font-size="9">↑ 2.1%</text>
+          <polyline points="40,175 90,145 140,155 190,120 240,130 290,95 340,105 390,80 440,90 490,65 540,75" fill="none" stroke="#0074FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+          <polygon points="40,175 40,175 90,145 140,155 190,120 240,130 290,95 340,105 390,80 440,90 490,65 540,75 540,175" fill="url(#area)" opacity=".15"/>
+          <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0074FF" stop-opacity=".4"/><stop offset="1" stop-color="#0074FF" stop-opacity="0"/></linearGradient></defs>
+        </svg>
+      </div>
+      <a href="#dashboard" class="btn-primary glass" id="heroCta">View Dashboard <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    </div>
+  </section>
+
+  <!-- Dashboard -->
+  <section id="dashboard" class="section">
+    <div class="section-bg"><div class="orb orb-1"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">📊 Dashboard</span><h2>Analytics Dashboard</h2><p>Live data visualization with interactive SVG charts</p></div>
+      <div class="kpi-grid" id="kpiGrid"></div>
+      <div class="chart-main-grid">
+        <div class="chart-card glass" id="chartRevenue"><div class="chart-card-header"><h3>Revenue Over Time</h3><span class="chart-type-badge">Line</span></div><div class="chart-svg-container" id="revenueChart"></div></div>
+        <div class="chart-card glass" id="chartUsers"><div class="chart-card-header"><h3>Users by Source</h3><span class="chart-type-badge">Pie</span></div><div class="chart-svg-container" id="usersChart"></div></div>
+        <div class="chart-card glass" id="chartTraffic"><div class="chart-card-header"><h3>Monthly Traffic</h3><span class="chart-type-badge">Bar</span></div><div class="chart-svg-container" id="trafficChart"></div></div>
+        <div class="chart-card glass" id="chartConversion"><div class="chart-card-header"><h3>Conversion Rate</h3><span class="chart-type-badge">Area</span></div><div class="chart-svg-container" id="conversionChart"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Charts -->
+  <section id="charts" class="section">
+    <div class="section-bg"><div class="orb orb-2"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">📈 Charts</span><h2>Chart Components</h2><p>Individual SVG chart types with customization controls</p></div>
+      <div class="chart-tabs glass">
+        <button class="chart-tab active" data-chart="line">Line</button>
+        <button class="chart-tab" data-chart="bar">Bar</button>
+        <button class="chart-tab" data-chart="pie">Pie</button>
+        <button class="chart-tab" data-chart="area">Area</button>
+        <button class="chart-tab" data-chart="donut">Donut</button>
+      </div>
+      <div class="chart-tab-content active" id="chart-line">
+        <div class="single-chart"><div class="single-chart-svg" id="lineChartDemo"></div></div>
+        <pre class="comp-code glass"><code>&lt;svg&gt;...&lt;/svg&gt; — Line chart with data points and smooth curves</code><button class="copy-btn" id="copyLineSvg">Copy SVG</button></pre>
+      </div>
+      <div class="chart-tab-content" id="chart-bar">
+        <div class="single-chart"><div class="single-chart-svg" id="barChartDemo"></div></div>
+        <pre class="comp-code glass"><code>&lt;svg&gt;...&lt;/svg&gt; — Bar chart with labeled axes and grid lines</code><button class="copy-btn" id="copyBarSvg">Copy SVG</button></pre>
+      </div>
+      <div class="chart-tab-content" id="chart-pie">
+        <div class="single-chart"><div class="single-chart-svg" id="pieChartDemo"></div></div>
+        <pre class="comp-code glass"><code>&lt;svg&gt;...&lt;/svg&gt; — Pie chart with percentage labels and legend</code><button class="copy-btn" id="copyPieSvg">Copy SVG</button></pre>
+      </div>
+      <div class="chart-tab-content" id="chart-area">
+        <div class="single-chart"><div class="single-chart-svg" id="areaChartDemo"></div></div>
+        <pre class="comp-code glass"><code>&lt;svg&gt;...&lt;/svg&gt; — Area chart with gradient fill</code><button class="copy-btn" id="copyAreaSvg">Copy SVG</button></pre>
+      </div>
+      <div class="chart-tab-content" id="chart-donut">
+        <div class="single-chart"><div class="single-chart-svg" id="donutChartDemo"></div></div>
+        <pre class="comp-code glass"><code>&lt;svg&gt;...&lt;/svg&gt; — Donut chart with center label</code><button class="copy-btn" id="copyDonutSvg">Copy SVG</button></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data -->
+  <section id="data" class="section">
+    <div class="section-bg"><div class="orb orb-1"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">📋 Data</span><h2>Data Explorer</h2><p>View raw data, generate random datasets, or import CSV</p></div>
+      <div class="data-controls">
+        <button class="btn-primary glass" id="dataGenerate">Generate New Data</button>
+        <label class="btn-secondary glass" style="cursor:pointer"><input type="file" id="dataCsvInput" accept=".csv" style="display:none">Import CSV</label>
+        <button class="btn-secondary glass" id="dataExportCsv">Export CSV</button>
+      </div>
+      <div class="data-table-wrapper glass"><table class="data-table" id="dataTable"></table></div>
+      <div class="data-summary glass" id="dataSummary"></div>
+    </div>
+  </section>
+
+  <!-- Settings -->
+  <section id="settings" class="section">
+    <div class="section-bg"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">⚙️ Settings</span><h2>Dashboard Settings</h2><p>Customize chart colors, refresh rate, and display options</p></div>
+      <div class="settings-grid-dash">
+        <div class="settings-card glass">
+          <h3 class="settings-card-title">🎨 Colors</h3>
+          <div class="control-group"><label class="control-label">Primary Chart Color</label><input type="color" class="color-input" id="chartPrimaryColor" value="#0074FF"></div>
+          <div class="control-group"><label class="control-label">Secondary Color</label><input type="color" class="color-input" id="chartSecondaryColor" value="#10b981"></div>
+          <div class="control-group"><label class="control-label">Tertiary Color</label><input type="color" class="color-input" id="chartTertiaryColor" value="#ffd700"></div>
+        </div>
+        <div class="settings-card glass">
+          <h3 class="settings-card-title">📊 Display</h3>
+          <div class="control-group"><label class="control-label">Animation</label><label class="toggle-wrap"><input type="checkbox" class="toggle-input" id="animEnabled" checked><span class="toggle-track"><span class="toggle-thumb"></span></span></label></div>
+          <div class="control-group"><label class="control-label">Show Grid</label><label class="toggle-wrap"><input type="checkbox" class="toggle-input" id="gridEnabled" checked><span class="toggle-track"><span class="toggle-thumb"></span></span></label></div>
+          <div class="control-group"><label class="control-label">Show Legend</label><label class="toggle-wrap"><input type="checkbox" class="toggle-input" id="legendEnabled" checked><span class="toggle-track"><span class="toggle-thumb"></span></span></label></div>
+        </div>
+        <div class="settings-card glass">
+          <h3 class="settings-card-title">🔄 Data</h3>
+          <div class="control-group"><label class="control-label">Data Points: <span id="dataPointCount">12</span></label><input type="range" class="range" id="dataPointsRange" min="6" max="30" value="12"></div>
+          <div class="control-group"><label class="control-label">Auto-refresh (s)</label><select class="select" id="autoRefresh"><option value="0">Off</option><option value="5">5s</option><option value="10">10s</option><option value="30">30s</option><option value="60">60s</option></select></div>
+        </div>
+        <div class="settings-card glass settings-card-wide">
+          <div class="settings-actions"><button class="btn-primary glass" id="applySettings">Apply & Refresh</button><button class="btn-secondary glass" id="resetSettings">Reset Defaults</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="section-bg"><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+    <div class="container">
+      <div class="section-header"><span class="section-badge glass">ℹ️ About</span><h2>About AEL Analytics Dashboard</h2><p>A pure SVG charting dashboard by AEL Digital Studio</p></div>
+      <div class="about-grid">
+        <div class="about-card glass"><h3>📋 Overview</h3><p>AEL Analytics Dashboard generates all charts as pure SVG — no external charting libraries. Features 5 chart types, interactive tooltips, data export/import, and real-time simulation.</p></div>
+        <div class="about-card glass"><h3>⚡ Features</h3><ul class="about-list"><li>5 chart types: Line, Bar, Pie, Area, Donut</li><li>Pure SVG generation — zero dependencies</li><li>Interactive tooltips on hover</li><li>KPI metric cards with trends</li><li>CSV import/export</li><li>Auto-refresh support</li></ul></div>
+        <div class="about-card glass"><h3>🛠 Tech Stack</h3><ul class="about-list"><li><strong>HTML5</strong> — Semantic structure</li><li><strong>CSS3</strong> — Glassmorphism, grid, animations</li><li><strong>JavaScript</strong> — SVG DOM generation, data simulation, CSV parser</li></ul></div>
+        <div class="about-card glass"><h3>👤 Author</h3><p><strong>Ayman Elmasry</strong><br>AEL Digital Studio</p><p class="about-version">Version 1.0 — 2026</p><p class="about-license">MIT License — Free for personal and commercial use</p></div>
+      </div>
+      <div class="about-footer glass"><p>&copy; 2026 Ayman Elmasry — AEL Digital Studio. All rights reserved.</p><p class="about-tagline">Pure SVG charts — zero dependencies</p></div>
+    </div>
+  </section>
+
+  <script src="ael_dashboard.js"></script>
+</body>
+</html>
