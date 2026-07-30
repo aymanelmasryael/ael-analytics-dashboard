@@ -71,12 +71,10 @@ Data → SVG Path Generator → DOM SVG Element → Styled Chart
 ```
 ael-analytics-dashboard/
 ├── index.html                    # HTML5 semantic structure
-├── css/
-│   └── style.css                 # All styles (glassmorphism, dark theme)
-├── js/
-│   └── script.js                 # Full JS engine (SVG generation, charts, data, UI)
+├── ael_dashboard.css             # All styles (glassmorphism, dark theme)
+├── ael_dashboard.js              # Full JS engine (SVG generation, charts, data, UI)
+├── ael-logo.svg                  # AEL brand logo
 ├── screenshot.svg                # Project preview image
-├── .gitignore
 └── README.md
 ```
 
@@ -167,7 +165,7 @@ Or simply open `index.html` in any modern browser — no server required.
 **Created by:** Ayman Elmasry — AEL Digital Studio  
 **Website:** [aymanelmasry.com](https://aymanelmasry.com)  
 **Email:** [info@aymanelmasry.com](mailto:info@aymanelmasry.com)  
-**License:** © 2026 Ayman Elmasry — AEL Digital Studio. All rights reserved.
+**License:** MIT License — Free for personal and commercial use.
 
 ### Connect
 
